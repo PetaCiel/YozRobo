@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yozrobo View</title>
+    <link rel="stylesheet" href="style.css">
+<!-- <script src="https://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script> -->
+<!-- <script type="text/javascript" src="roslib.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/roslibjs/0.20.0/roslib.min.js"></script>
+</head>
+<body>
+    <div class = "yozrobo-container">
+        <p id="tabcontroll">
+            <a href = "#tabpage1">base_view</a>
+            <a href = "#tabpage2">addview_0</a>
+            <a href = "#tabpage3">addview_1</a>
+            <a href = "#tabpage3">addview_2</a>
+            <a href = "#tabpage3">addview_3</a>
+        </p>
+        <div id = "tabbody">
+            <div id = "tabpage1">
+            <p><img id="image_sub"/></p>
+            <p>接続状態: <span id="status">未接続</span></p>
+
+
+            <script src="ros_init.js"></script>
+
+
+
+            </div>
+            <div id = "tabpage2">
+                <p>page2</p>
+                <input type="text" id="page2-input" placeholder="入力欄">
+                <button id="page2-button">送信ボタン</button>
+            </div>
+            <div id = "tabpage3">
+                <p>page3</p>
+                <div id="output-box" style="border: 1px dashed #ccc; padding: 10px; min-height: 50px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

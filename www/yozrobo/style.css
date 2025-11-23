@@ -1,0 +1,46 @@
+#tabcontroll a{
+    display:inline-block;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.75em 0.75em 0em 0em;
+    padding:0.25em 1em;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+#status{
+    font-weight: bold;
+    font-size: 3em;
+    padding:0.1em 0.5em;
+    border-width: 3px 3px 3px 3px;
+    border-radius: 0.25em 0.25em 0.25em 0.25em ;
+    border-style: solid;
+    border-color: black;
+    color: red;
+    background-color: white;
+}
+
+#tabbody div{
+    border: 1px solid black;
+    width:  800px;                /* 横幅を200pxに指定 */
+    height: 200px;               /* 横幅を200pxに指定 */
+    margin-top: -1px;
+    padding:1em;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+}
+
+#tabcontroll a:nth-child(1), #tabbody div:nth-child(1){
+    background-color:#ffffdd;
+}
+#tabcontroll a:nth-child(2), #tabbody div:nth-child(2){
+    background-color:#ddffdd;
+}
+#tabcontroll a:nth-child(3), #tabbody div:nth-child(3){
+    background-color:#ddddff;
+}

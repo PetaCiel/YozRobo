@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(home2WD)
+project(home_2wd)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 add_executable(controll_node src/controll_node.cpp)
 target_include_directories(controll_node PUBLIC
@@ -21,6 +22,7 @@ ament_target_dependencies(
   "rclcpp"
   "geometry_msgs"
   "std_msgs"
+  "sensor_msgs"
 )
 
 install(TARGETS controll_node
